@@ -1,9 +1,9 @@
     
     header {
         display: flex;
-        justify-content: center;
-        margin-bottom: 3%;
-        padding-top: 3%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3%;
     }
     
     header h1 {
@@ -11,13 +11,11 @@
         background-color: #3A4151;
         color: white;
         padding: 10px;
-        margin-right: 12px;
     }
     
     header ul {
         display: flex;
         list-style-type: none;
-        justify-content: space-between;
         gap: 20px;
         padding: 10px;
     }
@@ -71,6 +69,8 @@
     } 
 
     .profile {
+        display: flex;
+        flex-direction: column;
         margin: 0 auto;
     }
 
@@ -90,13 +90,9 @@
         text-align: center;
     }
 
-    .profile_photo {
-        display: flex;
-        justify-content: center;
-    }
-
-    .profile_photo img {
-        width: 60%;
+    .profile .content img {
+        width: 100%;
+        padding-top: 10px;
     }
 
     footer {
@@ -163,28 +159,11 @@
     }
 
     .profile {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 80px 1fr;
+        display: flex;
+        flex-direction: row;
         max-width: 960px;
         padding: 3% 4%;
         gap: 10px;
-    }
-
-    .profile .content {
-        grid-row: 1;
-        width: 100%;
-        padding: 0;
-        
-    }
-
-    .profile_photo {
-        grid-row: 2;
-        margin: 0;
-    }
-
-    .profile_photo img {
-        width: 100%;
     }
 
 }
