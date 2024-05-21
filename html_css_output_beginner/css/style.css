@@ -159,7 +159,6 @@
     }
 
     .profile {
-        display: flex;
         flex-direction: row;
         max-width: 960px;
         padding: 3% 4%;
